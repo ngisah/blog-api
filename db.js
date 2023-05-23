@@ -5,7 +5,7 @@ export const db = mysql.createConnection(
     {
         host: 'localhost',
         user: 'root',
-        password: 'tonyblanks58',
+        password: process.env.DB_PASS,
         database: 'ngisahblog',
     }
 ) 
